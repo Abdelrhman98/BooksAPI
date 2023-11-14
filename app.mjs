@@ -1,7 +1,6 @@
 import express from "express";
 import compression from "compression";
 import helmet from "helmet";
-import cors from "cors";
 import bodyParser from "body-parser";
 import "./database/connection.mjs";
 import AppErrorHandler from "./config/error.mjs";
@@ -15,7 +14,6 @@ const app = express();
 
 app.use(morganSuccessHandler);
 app.use(morganErrorHandler);
-app.use(cors());
 
 app.use(helmet());
 
