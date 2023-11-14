@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run dev",
     "dev": "NODE_ENV=development nodemon --inspect -- index.mjs",
-    "prod": "NODE_ENV=prod node  server/main.js"
+    "prod": "NODE_ENV=prod node  index.mjs"
   },
   "author": "",
   "license": "ISC",
